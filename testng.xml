@@ -3,8 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testcases.ApiDemoTest"/> 
-      <class name="testcases.Animation"/>
+      <!--   <class name="testcases.ApiDemoTest"/>  -->
+     <!--  <class name="testcases.voiceRecognization"/> --> 
+       <!-- <class name="testcases.accessbalityDemo"/> --> 
+       <class name="testcases.dragAndDrop"/>
+  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

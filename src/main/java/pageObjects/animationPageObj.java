@@ -30,9 +30,22 @@ public class animationPageObj {
 	@AndroidFindBy(id="io.appium.android.apis:id/button")
 	public WebElement FlipButton;
 	
-
-	//driver.findElementByXpath("//android.widget.TextView[@text='Preference']");
 	
+
+	public WebElement getAnimation()
+	{
+		return animation;
+	}
+	public WebElement getFiip()
+	{
+		
+		return Flip;
+	}
+	public WebElement getFiipButton()
+	{
+		
+		return  FlipButton;
+	}
 	
 	
 	

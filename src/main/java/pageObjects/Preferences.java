@@ -16,13 +16,39 @@ public class Preferences {
 	}
 	
 	
+
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Preference']")
+	public WebElement Preferences;
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='3. Preference dependencies']")
 	public WebElement dependencies;
-	
 
 	@AndroidFindBy(className="android.widget.Button")
 	public List<WebElement> buttons;
 	
+	@AndroidFindBy(id="android:id/checkbox")
+	public WebElement Checkbox;
 	
+
 	
+
+	public WebElement getPreferences()
+	{
+		return Preferences;
+	}
+
+
+	public WebElement getDependencies()
+	{
+		return dependencies;
+	}
+	public List<WebElement> getButtons()
+	{
+		return buttons;
+	}
+	
+	public WebElement getCheckbox()
+	{
+		return Checkbox;
+	}
 }
