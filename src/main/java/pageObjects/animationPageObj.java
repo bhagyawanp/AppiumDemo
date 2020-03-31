@@ -10,11 +10,11 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 // All th objects belonging to one page will be defined in java class
-public class animationPageObj {
+public class AnimationPageObj {
 // 1. Is to call the driver object from testcase to Pageobject file
 	
 	//Concatenate driver
-	public animationPageObj(AndroidDriver<AndroidElement> driver)
+	public AnimationPageObj(AndroidDriver<AndroidElement> driver)
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
@@ -24,11 +24,11 @@ public class animationPageObj {
 	public WebElement animation;
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='View Flip']")
-	public WebElement Flip;
+	public WebElement flip;
 	
 	
 	@AndroidFindBy(id="io.appium.android.apis:id/button")
-	public WebElement FlipButton;
+	public WebElement flipButton;
 	
 	
 
@@ -39,12 +39,12 @@ public class animationPageObj {
 	public WebElement getFiip()
 	{
 		
-		return Flip;
+		return flip;
 	}
-	public WebElement getFiipButton()
+	public WebElement getFlipButton()
 	{
 		
-		return  FlipButton;
+		return  flipButton;
 	}
 	
 	

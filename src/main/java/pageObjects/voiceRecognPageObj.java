@@ -9,8 +9,8 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class voiceRecognPageObj {
-	public voiceRecognPageObj(AppiumDriver driver)
+public class VoiceRecognPageObj {
+	public VoiceRecognPageObj(AppiumDriver driver)
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
@@ -21,11 +21,11 @@ public class voiceRecognPageObj {
 	
 
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Voice Recognition']")
-	public WebElement VoiceRecognition;
+	public WebElement voiceRecognition;
 	
 	
 	@AndroidFindBy(id="io.appium.android.apis:id/supported_languages")
-	public WebElement SupportedLanguage;
+	public WebElement supportedLanguage;
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='uk-UA']")
 	public WebElement seletLanguage;
 	
@@ -36,11 +36,11 @@ public class voiceRecognPageObj {
 	}
 	public WebElement getVoiceRecognition()
 	{
-		return VoiceRecognition;
+		return voiceRecognition;
 	}
 	public WebElement getSupportedLanguage()
 	{
-		return SupportedLanguage;
+		return supportedLanguage;
 	}
 	public WebElement getseletLanguage()
 	{

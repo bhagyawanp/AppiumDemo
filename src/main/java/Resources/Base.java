@@ -23,8 +23,6 @@ public class Base {
 
 	  public static AndroidDriver<AndroidElement>  driver;
 	
-
-
 	public static  AndroidDriver<AndroidElement> capabilities(String appName) throws IOException, InterruptedException
 	{
 		

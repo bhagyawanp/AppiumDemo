@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <!--   <class name="testcases.ApiDemoTest"/>  -->
-     <!--  <class name="testcases.voiceRecognization"/> --> 
-       <!-- <class name="testcases.accessbalityDemo"/> --> 
-       <class name="testcases.dragAndDrop"/>
+        <!--   <class name="testcases.PreferenceDemo"/>  -->
+       <!--  <class name="testcases.VoiceRecognization"/> --> 
+       <!-- <class name="testcases.AccessbalityDemo"/> --> 
+        <class name="testcases.DragAndDrop"/>
   
     </classes>
   </test> <!-- Test -->

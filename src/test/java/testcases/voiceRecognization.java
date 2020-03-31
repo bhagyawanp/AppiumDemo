@@ -9,9 +9,9 @@ import org.testng.annotations.Test;
 import Resources.Base;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import pageObjects.voiceRecognPageObj;
+import pageObjects.VoiceRecognPageObj;
 
-public class voiceRecognization extends Base {
+public class VoiceRecognization extends Base {
 
 	@Test
 	public void voiceRecognizationtest() throws IOException, InterruptedException {
@@ -19,7 +19,7 @@ public class voiceRecognization extends Base {
 		AndroidDriver<AndroidElement> driver=capabilities("apiDemo");
      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
   
-     voiceRecognPageObj vrp=new voiceRecognPageObj(driver);
+     VoiceRecognPageObj vrp=new VoiceRecognPageObj(driver);
      vrp.getApp().click();
 	 driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Voice Recognition\"));");
 	 vrp.getVoiceRecognition().click();
