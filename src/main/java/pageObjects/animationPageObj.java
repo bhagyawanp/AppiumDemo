@@ -21,13 +21,13 @@ public class AnimationPageObj {
 	
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Animation']")
-	private WebElement animation;
+	public WebElement animation;
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='View Flip']")
-	private WebElement flip;
+	public WebElement flip;
 	
 	@AndroidFindBy(id="io.appium.android.apis:id/button")
-	private WebElement flipButton;
+	public WebElement flipButton;
 	
 	
 
