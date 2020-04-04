@@ -17,17 +17,16 @@ public class VoiceRecognPageObj {
 	
 
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='App']")
-	public WebElement App;
+	private WebElement App;
 	
-
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Voice Recognition']")
-	public WebElement voiceRecognition;
-	
+	private WebElement voiceRecognition;
 	
 	@AndroidFindBy(id="io.appium.android.apis:id/supported_languages")
-	public WebElement supportedLanguage;
+	private WebElement supportedLanguage;
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='uk-UA']")
-	public WebElement seletLanguage;
+	private WebElement seletLanguage;
 	
 	
 	public WebElement getApp()

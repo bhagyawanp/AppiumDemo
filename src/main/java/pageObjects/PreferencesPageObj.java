@@ -18,16 +18,16 @@ public class PreferencesPageObj {
 	
 
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Preference']")
-	public WebElement Preferences;
+	private WebElement Preferences;
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='3. Preference dependencies']")
-	public WebElement dependencies;
+	private WebElement dependencies;
 
 	@AndroidFindBy(className="android.widget.Button")
-	public List<WebElement> buttons;
+	private List<WebElement> buttons;
 	
 	@AndroidFindBy(id="android:id/checkbox")
-	public WebElement checkbox;
+	private WebElement checkbox;
 	
 
 	

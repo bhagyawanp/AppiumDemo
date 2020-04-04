@@ -9,9 +9,8 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-// All th objects belonging to one page will be defined in java class
 public class AccessbalityPageObj{
-// 1. Is to call the driver object from testcase to Pageobject file
+
 	
 	//Concatenate driver
 	public AccessbalityPageObj(AndroidDriver<AndroidElement> driver)
@@ -23,21 +22,21 @@ public class AccessbalityPageObj{
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Accessibility']")
 	
 	
-	public WebElement accessbility;
+	private WebElement accessbility;
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Accessibility Node Querying']")
 	public WebElement nodeQuerying;
 	
 	
 	@AndroidFindBy(id="io.appium.android.apis:id/button")
-	public WebElement setting;
+	private WebElement setting;
 	
 
 	@AndroidFindBy(xpath="//android.widget.TextView[@content-desc='Search settings']")
-	public WebElement search;
+	private WebElement search;
 	
 	@AndroidFindBy(id="android:id/search_src_text")
-	public WebElement searchText;
+	private WebElement searchText;
 	
 	
 	

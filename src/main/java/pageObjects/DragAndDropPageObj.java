@@ -18,16 +18,16 @@ public class DragAndDropPageObj {
 	
 
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Views']")
-	public WebElement views;
+	private WebElement views;
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Drag and Drop']")
-	public WebElement dragAndDrop;
+	private WebElement dragAndDrop;
 
 	@AndroidFindBy(className="android.view.View")
-	public WebElement drag;
+	private WebElement drag;
 	
 	@AndroidFindBy(className="android.view.View")
-	public WebElement drop;
+	private WebElement drop;
 	
 
 	
