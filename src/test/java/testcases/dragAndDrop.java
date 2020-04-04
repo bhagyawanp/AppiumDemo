@@ -29,9 +29,9 @@ public void apiDemoTest() throws IOException, InterruptedException
 {
 		// TODO Auto-generated method stub
 		AndroidDriver<AndroidElement> driver=capabilities("apiDemo");
-     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-  
-     DragAndDropPageObj Dp= new DragAndDropPageObj(driver);
+     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+     Thread.sleep(5000);
+      DragAndDropPageObj Dp= new DragAndDropPageObj(driver);
      Dp.getViews().click();
      Dp.getDragAndDrop().click();
      WebElement source=Dp.getDrag();

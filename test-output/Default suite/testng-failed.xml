@@ -6,7 +6,6 @@
       <class name="testcases.DragAndDrop">
         <methods>
           <include name="accessbalityDemoTest"/>
-          <include name="beforeTest"/>
         </methods>
       </class> <!-- testcases.DragAndDrop -->
     </classes>

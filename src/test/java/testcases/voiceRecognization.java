@@ -17,8 +17,8 @@ public class VoiceRecognization extends Base {
 	public void voiceRecognizationtest() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		AndroidDriver<AndroidElement> driver=capabilities("apiDemo");
-     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-  
+     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+     Thread.sleep(5000);
      VoiceRecognPageObj vrp=new VoiceRecognPageObj(driver);
      vrp.getApp().click();
 	 driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Voice Recognition\"));");

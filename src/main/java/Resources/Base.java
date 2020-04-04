@@ -26,7 +26,7 @@ public class Base {
 	public static  AndroidDriver<AndroidElement> capabilities(String appName) throws IOException, InterruptedException
 	{
 		
-FileInputStream fis=new FileInputStream("/Users/bhagyawantpawar/eclipse-workspace/AppiumDemoProject/src/main/java/Resources/gobal.properties");
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"/src/main/java/Resources/global.properties");
 		Properties prop=new Properties();
 		prop.load(fis);
 		
@@ -39,7 +39,7 @@ FileInputStream fis=new FileInputStream("/Users/bhagyawantpawar/eclipse-workspac
 
      capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Bhagyawan");
     
-     capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
+     capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
      capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,14);
      
      capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());

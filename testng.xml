@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-        <!--   <class name="testcases.PreferenceDemo"/>  -->
-       <!--  <class name="testcases.VoiceRecognization"/> --> 
-       <!-- <class name="testcases.AccessbalityDemo"/> --> 
+        <class name="testcases.PreferenceDemo"/> 
+         <class name="testcases.VoiceRecognization"/>
+        <class name="testcases.AccessbalityDemo"/> 
         <class name="testcases.DragAndDrop"/>
   
     </classes>

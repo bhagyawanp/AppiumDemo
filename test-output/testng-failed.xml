@@ -3,9 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="testcases.VoiceRecognization">
+        <methods>
+          <include name="voiceRecognizationtest"/>
+        </methods>
+      </class> <!-- testcases.VoiceRecognization -->
       <class name="testcases.DragAndDrop">
         <methods>
-          <include name="accessbalityDemoTest"/>
+          <include name="apiDemoTest"/>
         </methods>
       </class> <!-- testcases.DragAndDrop -->
     </classes>

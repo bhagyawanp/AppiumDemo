@@ -26,7 +26,7 @@ public void apiDemoTest() throws IOException, InterruptedException
 		// TODO Auto-generated method stub
 	
 		AndroidDriver<AndroidElement> driver=capabilities("apiDemo");
-     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
   
      PreferencesPageObj p=new PreferencesPageObj(driver);
      p.getPreferences().click();
@@ -35,6 +35,7 @@ public void apiDemoTest() throws IOException, InterruptedException
      driver.pressKey(new KeyEvent(AndroidKey.BACK));
      driver.pressKey(new KeyEvent(AndroidKey.BACK));
      AnimationPageObj an=new AnimationPageObj(driver);
+     
      an.animation.click();
      an.flip.click();
      an.flipButton.click();
